@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Cactus",
+        "img": "https://images.pexels.com/photos/13336360/pexels-photo-13336360.jpeg",
+        "price": 250
+    },
+    {
+        "id": 2,
+        "title": "Jade",
+        "img": "https://images.pexels.com/photos/15406171/pexels-photo-15406171.jpeg",
+        "price": 250
+    },
+    {
+        "id": 3,
+        "title": "Zameluka",
+        "img": "https://images.pexels.com/photos/1906439/pexels-photo-1906439.jpeg",
+        "price": 250
+    },
+    {
+        "id": 4,
+        "title": "Lança de São Jorge",
+        "img": "https://images.pexels.com/photos/2718447/pexels-photo-2718447.jpeg",
+        "price": 250
+    },
+    {
+        "id": 5,
+        "title": "Lírio da Paz",
+        "img": "https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg",
+        "price": 250
+    },
+    {
+        "id": 6,
+        "title": "Espada de São Jorge",
+        "img": "https://images.pexels.com/photos/2922353/pexels-photo-2922353.jpeg",
+        "price": 250
+    }
+]
