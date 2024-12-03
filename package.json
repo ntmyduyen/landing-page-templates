@@ -1,0 +1,56 @@
+{
+  "name": "landricks-components",
+  "version": "0.8.0",
+  "description": "A set or React components for building structured landing pages",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib --copy-files",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/line64/landricks-components.git"
+  },
+  "keywords": [
+    "landing",
+    "react",
+    "component"
+  ],
+  "author": "Line64",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/line64/landricks-components/issues"
+  },
+  "homepage": "https://github.com/line64/landricks-components#readme",
+  "dependencies": {
+    "color": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-fontawesome": "^1.1.0",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.1.13",
+    "@storybook/addon-info": "^4.1.13",
+    "@storybook/addon-links": "^4.1.13",
+    "@storybook/react": "^4.1.13",
+    "babel-loader": "^8.0.5"
+  }
+}
