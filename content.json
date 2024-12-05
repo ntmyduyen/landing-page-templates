@@ -1,0 +1,340 @@
+{
+    "title": "WindMill",
+    "headerLogoSrc": "/logo-mark.png",
+    "headerLogoAlt": "logo",
+    "headerLogoHref": "/",
+    "headerLinks": [
+        {
+            "label": "Features",
+            "href": "#features"
+        },
+        {
+            "label": "Pricing",
+            "href": "#pricing"
+        },
+        {
+            "label": "Testimonials",
+            "href": "#testimonials"
+        },
+        {
+            "label": "FAQs",
+            "href": "#faqs"
+        }
+    ],
+    "headerButtons": [
+        {
+            "label": "Sign In",
+            "href": "#",
+            "color": "transparent",
+            "size": "small"
+        },
+        {
+            "label": "Sign Up",
+            "href": "#",
+            "color": "dark",
+            "size": "small"
+        }
+    ],
+    "heroTitle": "Your Mailbox is simplified",
+    "heroDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium",
+    "heroBadgeHref": "#",
+    "heroBadgeLabel": "😻 Learn What's New",
+    "heroButtons": [
+        {
+            "href": "#",
+            "label": "Start Free Trail",
+            "color": "dark"
+        },
+        {
+            "href": "#",
+            "label": "Learn More",
+            "color": "transparent",
+            "variant": "link",
+            "icon": "tabler:arrow-right"
+        }
+    ],
+    "heroThumbnail": "/tablet-mockup.png",
+    "heroClientsLabel": "Trusted by 100+ Brands",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Here are some of our most frequently asked questions. If you have a question that isn't answered here, please feel free to contact us.",
+    "faqButtonLabel": "Contact Support",
+    "faqButtonHref": "#",
+    "faqs": [
+        {
+            "title": "What is a FAQ?",
+            "body": "A FAQ is a list of frequently asked questions and answers on a particular topic."
+        },
+        {
+            "title": "Why do I need a FAQ?",
+            "body": "A FAQ can help your customers find answers to common questions without having to contact you."
+        },
+        {
+            "title": "How do I create a FAQ?",
+            "body": "You can create a FAQ by writing a list of questions and answers and displaying them on your website."
+        },
+        {
+            "title": "How do I display a FAQ?",
+            "body": "You can display a FAQ by using an accordion or toggle component to show and hide the answers."
+        }
+    ],
+    "testimonialTitle": "Love from our customers",
+    "testimonialDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique veritatis",
+    "testimonialBadge": "TESTIMONIALS",
+    "testimonialButtonLabel": "Share Your Feedback on",
+    "testimonialButtonHref": "#",
+    "testimonials": [
+        {
+            "name": "John Doe",
+            "title": "CEO of  a Company",
+            "avatar": "https://i.pravatar.cc/150?img=1",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut"
+        },
+        {
+            "name": "Jane Doe",
+            "title": "CTO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=2",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?"
+        },
+        {
+            "name": "John Smith",
+            "title": "COO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=3",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?"
+        },
+        {
+            "name": "Jane Smith",
+            "title": "CFO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=4",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium"
+        },
+        {
+            "name": "John Doe",
+            "title": "CEO of  a Company",
+            "avatar": "https://i.pravatar.cc/150?img=5",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?"
+        },
+        {
+            "name": "Jane Doe",
+            "title": "CTO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=6",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesent necessitatibus"
+        },
+        {
+            "name": "John Smith",
+            "title": "COO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=7",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?"
+        },
+        {
+            "name": "Jane Smith",
+            "title": "CFO of a Company",
+            "avatar": "https://i.pravatar.cc/150?img=8",
+            "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium"
+        }
+    ],
+    "featuresTitle": "Discover Our Amazing Features",
+    "featuresDescription": "Explore the wide range of powerful features that our product offers. From advanced analytics to seamless integrations, we have everything you need to succeed.",
+    "featuresContents": [
+        {
+            "title": "Unlimited users",
+            "description": "Invite as many team members as you want.",
+            "icon": "tabler:users"
+        },
+        {
+            "title": "Unlimited projects",
+            "description": "Create as many projects as you need.",
+            "icon": "tabler:stack"
+        },
+        {
+            "title": "Unlimited storage",
+            "description": "Store all your files and assets in one place.",
+            "icon": "tabler:database"
+        },
+        {
+            "title": "Priority support",
+            "description": "Get priority support for all your needs.",
+            "icon": "tabler:headset"
+        },
+        {
+            "title": "Advanced analytics",
+            "description": "Get detailed insights and analytics.",
+            "icon": "tabler:chart-bar"
+        },
+        {
+            "title": "Custom branding",
+            "description": "Customize your branding and make it yours.",
+            "icon": "tabler:brand-appstore"
+        }
+    ],
+    "feature1Title": "Stay on top of your business",
+    "feature1Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique",
+    "feature1ImageSrc": "/phone-mockup.png",
+    "feature1List": [
+        {
+            "title": "Unlimited users",
+            "description": "Invite as many team members as you want.",
+            "icon": "tabler:users"
+        },
+        {
+            "title": "Unlimited projects",
+            "description": "Create as many projects as you need.",
+            "icon": "tabler:stack"
+        },
+        {
+            "title": "Unlimited storage",
+            "description": "Store all your files and assets in one place.",
+            "icon": "tabler:database"
+        }
+    ],
+    "feature2Title": "Stay on top of your business",
+    "feature2Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique",
+    "feature2ImageSrc": "/phone-mockup.png",
+    "feature2List": [
+        {
+            "title": "Priority support",
+            "description": "Get priority support for all your needs.",
+            "icon": "tabler:headset"
+        },
+        {
+            "title": "Advanced analytics",
+            "description": "Get detailed insights and analytics.",
+            "icon": "tabler:chart-bar"
+        },
+        {
+            "title": "Custom branding",
+            "description": "Customize your branding and make it yours.",
+            "icon": "tabler:brand-appstore"
+        }
+    ],
+    "pricingTitle": "Pricing for Everyone",
+    "pricingDescription": "Choose a plan that works for you. All plans include a 7-day free trial.",
+    "pricingBadge": "Plans",
+    "pricing": [
+        {
+            "name": "Free",
+            "description": "For small teams",
+            "value": {
+                "monthly": 0,
+                "yearly": 0
+            },
+            "unit": "per user/month",
+            "currency": "$",
+            "features": [
+                "Unlimited users",
+                "Unlimited projects",
+                "Unlimited storage",
+                "Unlimited support"
+            ],
+            "button": {
+                "label": "Get started",
+                "href": "/signup",
+                "color": "light",
+                "icon": "tabler:arrow-right"
+            }
+        },
+        {
+            "name": "Pro",
+            "description": "For growing teams",
+            "value": {
+                "monthly": 15,
+                "yearly": 12
+            },
+            "unit": "per user/month",
+            "currency": "$",
+            "features": [
+                "All Free features",
+                "Priority support",
+                "Advanced analytics",
+                "Custom branding"
+            ],
+            "button": {
+                "label": "Start free trial",
+                "href": "/signup",
+                "icon": "tabler:rocket"
+            }
+        },
+        {
+            "name": "Enterprise",
+            "description": "For large teams",
+            "value": {
+                "monthly": 29,
+                "yearly": 24
+            },
+            "unit": "per user/month",
+            "currency": "$",
+            "features": [
+                "All Pro features",
+                "Dedicated account manager",
+                "Custom integrations",
+                "Data import & export"
+            ],
+            "button": {
+                "label": "Contact sales",
+                "href": "/contact",
+                "color": "light",
+                "icon": "tabler:mail"
+            }
+        }
+    ],
+    "clients": [
+        {
+            "src": "/logoipsum-288.svg",
+            "name": "Logo"
+        },
+        {
+            "src": "/logoipsum-317.svg",
+            "name": "Logo"
+        },
+        {
+            "src": "/logoipsum-321.svg",
+            "name": "Logo"
+        },
+        {
+            "src": "/logoipsum-323.svg",
+            "name": "Logo"
+        },
+        {
+            "src": "/logoipsum-330.svg",
+            "name": "Logo"
+        },
+        {
+            "src": "/logoipsum-331.svg",
+            "name": "Logo"
+        }
+    ],
+    "footerCopyright": "2024 Your Company. All rights reserved.",
+    "footerLogoSrc": "/logo.png",
+    "footerLogoAlt": "logo",
+    "footerLinks": [
+        {
+            "label": "Privacy Policy",
+            "href": "#"
+        },
+        {
+            "label": "Terms of Service",
+            "href": "#"
+        }
+    ],
+    "footerSocial": [
+        {
+            "icon": "tabler:brand-x",
+            "url": "https://twitter.com/bansal_io"
+        },
+        {
+            "icon": "tabler:brand-instagram",
+            "url": "#"
+        },
+        {
+            "icon": "tabler:brand-youtube",
+            "url": "#"
+        },
+        {
+            "icon": "tabler:brand-linkedin",
+            "url": "#"
+        }
+    ],
+    "ctaTitle": "Ready to get started?",
+    "ctaDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique",
+    "ctaButtonLabel": "Start for Free",
+    "ctaButtonHref": "#"
+}

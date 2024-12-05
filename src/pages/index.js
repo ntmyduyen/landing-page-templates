@@ -11,84 +11,67 @@ import {
   CtaSection,
 } from "../components/sections";
 
-import {
-  header,
-  faqs,
-  testimonials,
-  features,
-  pricing,
-  clients,
-  footer,
-} from "@/data";
+import data from "../../content.json";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>WindMill</title>
+        <title>{data.title}</title>
       </Head>
       <Header
-        logo={header.logo}
-        links={header.links}
-        buttons={header.buttons}
+        logo={{
+          href: data.headerLogoHref,
+          src: data.headerLogoSrc,
+          alt: data.headerLogoAlt,
+        }}
+        links={data.headerLinks}
+        buttons={data.headerButtons}
       />
       <HeroSection
         id="home"
         badge={{
-          href: "#",
+          href: data.heroBadgeHref,
           icon: "tabler:arrow-right",
-          label: "😻 Learn What's New",
+          label: data.heroBadgeLabel,
         }}
-        title="Your Mailbox is simplified"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-        expedita, ipsam nobis blanditiis provident ducimus aut, velit
-        facere fugit praesentium"
-        buttons={[
-          {
-            href: "#",
-            label: "Start Free Trail",
-            color: "dark",
-          },
-          {
-            href: "#",
-            label: "Learn More",
-            color: "transparent",
-            variant: "link",
-            icon: "tabler:arrow-right",
-          },
-        ]}
+        title={data.headerTitle}
+        description={data.headerDescription}
+        buttons={data.heroButtons}
         image={{
-          src: "/tablet-mockup.png",
-          alt: "Product Screenshot on Tablet",
+          src: data.heroThumbnail,
+          alt: "Hero section",
           className: "w-full h-auto",
         }}
-        clientsLabel="Trusted by 100+ Brands"
-        clients={clients}
+        clientsLabel={data.heroClientsLabel}
+        clients={data.clients}
       />
       <FeatureSection
         id="features"
-        title="Discover Our Amazing Features"
-        description="Explore the wide range of powerful features that our product offers. From advanced analytics to seamless integrations, we have everything you need to succeed."
-        features={features}
+        title={data.featuresTitle}
+        description={data.featuresDescription}
+        features={data.featuresContents}
       />
       <LargeFeatureSection
-        title="Stay on top of your business"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique"
-        list={features.slice(0, 3)}
+        id="feature1"
+        title={data.feature1Title}
+        description={data.feature1Description}
+        list={data.feature1List}
         image={{
-          src: "/phone-mockup.png",
+          src: data.feature1ImageSrc,
           alt: "Image",
           className:
             "w-full aspect-square object-contain rotate-6 hover:rotate-0 duration-300 ease-in-out",
         }}
       />
       <LargeFeatureSection
+        id="feature2"
         reverse={true}
-        title="Stay on top of your business"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique"
-        list={features.slice(0, 3)}
+        title={data.feature2Title}
+        description={data.feature2Description}
+        list={data.feature2List}
         image={{
-          src: "/phone-mockup.png",
+          src: data.feature2ImageSrc,
           alt: "Image",
           className:
             "w-full aspect-square object-contain -rotate-6 hover:rotate-0 duration-300 ease-in-out",
@@ -96,59 +79,65 @@ export default function Home() {
       />
       <PricingSection
         id="pricing"
-        title="Pricing for Everyone"
-        description="Choose a plan that works for you. All plans include a 7-day free trial."
+        title={data.pricingTitle}
+        description={data.pricingDescription}
         badge={{
           leading: true,
           icon: "tabler:credit-card",
-          label: "Plans",
+          label: data.pricingBadge,
         }}
-        pricing={pricing}
+        pricing={data.pricing}
       />
       <TestimonialSection
         id="testimonials"
-        title="Love from our customers"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique
-        veritatis"
+        title={data.testimonialTitle}
+        description={data.testimonialDescription}
         badge={{
           leading: true,
           icon: "tabler:heart",
-          label: "TESTIMONIALS",
+          label: data.testimonialBadge,
         }}
-        testimonials={testimonials}
+        testimonials={data.testimonials}
         button={{
           icon: "tabler:brand-x",
-          label: "Share Your Feedback on",
-          href: "#",
+          label: data.testimonialButtonLabel,
+          href: data.testimonialButtonHref,
           color: "white",
         }}
       />
       <FaqSection
         id="faqs"
-        title="Frequently Asked Questions"
-        description="Here are some of our most frequently asked questions. If you have a question that isn't answered here, please feel free to contact us."
+        title={data.faqTitle}
+        description={data.faqDescription}
         buttons={[
           {
-            label: "Contact Support",
-            href: "#",
+            label: data.faqButtonLabel,
+            href: data.faqButtonHref,
             color: "primary",
             variant: "link",
             icon: "tabler:arrow-right",
           },
         ]}
-        faqs={faqs}
+        faqs={data.faqs}
       />
       <CtaSection
-        title="Ready to get started?"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique"
-        buttons={[{ label: "Start for Free", href: "#", color: "dark" }]}
+        id="cta"
+        title={data.ctaTitle}
+        description={data.ctaDescription}
+        buttons={[
+          {
+            label: data.ctaButtonLabel,
+            href: data.ctaButtonHref,
+            color: "dark",
+          },
+        ]}
       />
       <Footer
         id="footer"
-        copyright={footer.copyright}
-        logo={footer.logo}
-        social={footer.social}
-        links={footer.links}
+        copyright={data.footerCopyright}
+        logo={data.footerLogo}
+        social={data.footerSocial}
+        links={data.footerLinks}
       />
     </>
   );
