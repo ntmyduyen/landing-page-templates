@@ -1,0 +1,68 @@
+{
+    "menu": [
+        {
+            "text": "Home",
+            "to": "/"
+        },
+        {
+            "text": "Store",
+            "to": "/store"
+        },
+        {
+            "text": "Contact",
+            "to": "/contact"
+        }
+    ],
+    "title": "PlantsAir",
+    "homeHeaderTitle": "Discover the plant ideal to your home or lifestyle",
+    "homeHeaderDescription": "Lorem ipsum dolor sit amet consectetur similique unde fugit veniam eius, corporis qui ducimus quibusdam.",
+    "homeHeaderButtonLabel": "buy now",
+    "homeHeaderButtonHref": "/store",
+    "homeContentTitle": "It's amazing plants to you",
+    "homeContentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "homeContentImage": "/images/pexels-min-an-793012.jpg",
+    "homeContentContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "storeProducts": [
+        {
+            "id": 1,
+            "title": "Cactus",
+            "img": "https://images.pexels.com/photos/13336360/pexels-photo-13336360.jpeg",
+            "price": 250
+        },
+        {
+            "id": 2,
+            "title": "Jade",
+            "img": "https://images.pexels.com/photos/15406171/pexels-photo-15406171.jpeg",
+            "price": 250
+        },
+        {
+            "id": 3,
+            "title": "Zameluka",
+            "img": "https://images.pexels.com/photos/1906439/pexels-photo-1906439.jpeg",
+            "price": 250
+        },
+        {
+            "id": 4,
+            "title": "Lança de São Jorge",
+            "img": "https://images.pexels.com/photos/2718447/pexels-photo-2718447.jpeg",
+            "price": 250
+        },
+        {
+            "id": 5,
+            "title": "Lírio da Paz",
+            "img": "https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg",
+            "price": 250
+        },
+        {
+            "id": 6,
+            "title": "Espada de São Jorge",
+            "img": "https://images.pexels.com/photos/2922353/pexels-photo-2922353.jpeg",
+            "price": 250
+        }
+    ],
+    "email": "email@plantsair.com",
+    "phone": "+55 (21) 98161-3455",
+    "instagram": "#",
+    "facebook": "#",
+    "copyRight": "© 2022 PlantsAir Inc."
+}

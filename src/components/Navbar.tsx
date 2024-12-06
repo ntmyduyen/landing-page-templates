@@ -1,4 +1,4 @@
-import { useState, useContext, MouseEvent } from 'react';
+import { useState, useContext } from "react";
 import {
   AppBar,
   Box,
@@ -11,30 +11,22 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-  Button,
   IconButton,
-  CssBaseline,
-  Badge, 
-  ListItemIcon,
+  Badge,
   Tooltip,
   Menu,
-  MenuItem,
-}from '@mui/material';
+} from "@mui/material";
 // icons
-import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-// database
-import plants from '../data/db.json'
+import MenuIcon from "@mui/icons-material/Menu";
+import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 // rota
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // components
-import { CartItem } from './CartItem';
+import { CartItem } from "./CartItem";
 // context
-import { ShoppingCartContext, ShoppingCartType } from '../context/ShoppingCart';
+import { ShoppingCartContext, ShoppingCartType } from "../context/ShoppingCart";
 
+import data from "../content.json";
 
 interface Props {
   /**
@@ -44,23 +36,14 @@ interface Props {
   window?: () => Window;
 }
 
-
-interface IProductCart{
-  id: number,
-  qtd: number
+interface IProductCart {
+  id: number;
+  qtd: number;
 }
 
-
 const drawerWidth = 200;
-const navItems = [
-  {text:'Home', icon:<HomeIcon />, to: '/'}, 
-  {text:'Store', icon: <LocalOfferIcon />, to: '/store'}, 
-  {text:'Contact', icon: <LocalPhoneIcon />, to: '/contact'}, 
-];
-
 
 function Navbar(props: Props) {
-
   const { window } = props;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
@@ -70,26 +53,24 @@ function Navbar(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" component='h1'
-          sx={{ 
-            fontWeight: 700,
-            my: 2,
-            color: '#27a556',
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Typography
+        variant="h6"
+        component="h1"
+        sx={{
+          fontWeight: 700,
+          my: 2,
+          color: "#27a556",
         }}
       >
-        PlantsAir
+        {data.title}
       </Typography>
       <Divider />
       <List>
-        {navItems.map(({text, icon, to}) => (
+        {data.menu.map(({ text, to }) => (
           <ListItem key={text}>
-            <ListItemButton
-              to={to}
-              component={Link}
-            >
-              <ListItemIcon>{icon}</ListItemIcon>
-              <ListItemText primary={text}/>
+            <ListItemButton to={to} component={Link}>
+              <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -97,7 +78,8 @@ function Navbar(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -106,27 +88,24 @@ function Navbar(props: Props) {
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
-  
+
   const handleClose = () => {
     setAnchorEl(null);
   };
 
   // usar funcoes do contexto api
-  const {
-    productCart,
-    sumQuantity
-  } = useContext(ShoppingCartContext) as ShoppingCartType;
-
-
+  const { productCart, sumQuantity } = useContext(
+    ShoppingCartContext
+  ) as ShoppingCartType;
 
   return (
-    <Stack direction='row'>
-      <AppBar 
+    <Stack direction="row">
+      <AppBar
         component="nav"
         position="fixed"
         elevation={2}
-        sx={{ 
-          backgroundColor: '#fff', 
+        sx={{
+          backgroundColor: "#fff",
           px: 3,
         }}
       >
@@ -136,38 +115,35 @@ function Navbar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' }, color: '#222222', }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "#222222" }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, fontWeight: 700, color: '#27a556', }}
+            sx={{ flexGrow: 1, fontWeight: 700, color: "#27a556" }}
           >
-            PlantsAir
+            {data.title}
           </Typography>
           <List
-            sx={{ 
-              display: { xs: 'none', sm: 'flex' }
+            sx={{
+              display: { xs: "none", sm: "flex" },
             }}
           >
-            {navItems.map(({text, to}) => (
-              <ListItem 
-                key={text}
-                disablePadding
-              >
+            {data.menu.map(({ text, to }) => (
+              <ListItem key={text} disablePadding>
                 <ListItemButton
                   component={Link}
                   to={to}
-                  sx={{ 
-                    fontFamily: 'Helvetica',
-                    color: '#222222',
+                  sx={{
+                    fontFamily: "Helvetica",
+                    color: "#222222",
                     "&:hover": {
-                      backgroundColor: 'transparent',
-                      color: '#59923d',
+                      backgroundColor: "transparent",
+                      color: "#59923d",
                     },
-                    textTransform: 'capitalize',
+                    textTransform: "capitalize",
                     fontWeight: 400,
                   }}
                 >
@@ -177,23 +153,22 @@ function Navbar(props: Props) {
             ))}
           </List>
 
-
-          { sumQuantity() > 0 && 
+          {sumQuantity() > 0 && (
             <Box>
-
               <Tooltip title="Cart items settings">
-                  <IconButton
+                <IconButton
                   size="large"
                   aria-label="show new notifications"
                   color="default"
-                  aria-controls={open ? 'basic-menu' : undefined}
+                  aria-controls={open ? "basic-menu" : undefined}
                   aria-haspopup="true"
-                  aria-expanded={open ? 'true' : undefined}
-                  onClick={handleClick}>
-                      <Badge badgeContent={sumQuantity()} color="error">
-                          <LocalGroceryStoreIcon />
-                      </Badge>
-                  </IconButton>
+                  aria-expanded={open ? "true" : undefined}
+                  onClick={handleClick}
+                >
+                  <Badge badgeContent={sumQuantity()} color="error">
+                    <LocalGroceryStoreIcon />
+                  </Badge>
+                </IconButton>
               </Tooltip>
               <Menu
                 anchorEl={anchorEl}
@@ -202,85 +177,86 @@ function Navbar(props: Props) {
                 onClose={handleClose}
                 // onClick={handleClose}
                 PaperProps={{
-                elevation: 0,
-                sx: {
-                    
-                        overflow: 'visible',
-                        filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-                        mt: 1.5,
-                        '& .MuiAvatar-root': {
-                            width: 32,
-                            height: 32,
-                            ml: -0.5,
-                            mr: 1,
-                        },
-                        '&:before': {
-                            content: '""',
-                            display: 'block',
-                            position: 'absolute',
-                            top: 0,
-                            right: 14,
-                            width: 10,
-                            height: 10,
-                            bgcolor: 'background.paper',
-                            transform: 'translateY(-50%) rotate(45deg)',
-                            zIndex: 0,
-                        },
+                  elevation: 0,
+                  sx: {
+                    overflow: "visible",
+                    filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                    mt: 1.5,
+                    "& .MuiAvatar-root": {
+                      width: 32,
+                      height: 32,
+                      ml: -0.5,
+                      mr: 1,
                     },
+                    "&:before": {
+                      content: '""',
+                      display: "block",
+                      position: "absolute",
+                      top: 0,
+                      right: 14,
+                      width: 10,
+                      height: 10,
+                      bgcolor: "background.paper",
+                      transform: "translateY(-50%) rotate(45deg)",
+                      zIndex: 0,
+                    },
+                  },
                 }}
-                transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-                anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                transformOrigin={{ horizontal: "right", vertical: "top" }}
+                anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
               >
-                
                 <CartItem />
                 <Divider />
-                    
-                  <Stack flexDirection="row">
 
-                      <ListItem sx={{ 
-                        fontSize: '1.125rem', 
-                        textTransform: 'capitalize'
-                      }}>
-                          Total:
-                      </ListItem>
+                <Stack flexDirection="row">
+                  <ListItem
+                    sx={{
+                      fontSize: "1.125rem",
+                      textTransform: "capitalize",
+                    }}
+                  >
+                    Total:
+                  </ListItem>
 
-                      <ListItem sx={{
-
-                        fontWeight: 700, 
-                        fontSize: '1.25rem'
-                      }}>
-                          $ {
-                            productCart.reduce((total: number, cartItem: IProductCart) => {
-                                const item = plants.find(p => p.id === cartItem.id)
-                                return total + (item?.price || 0) * cartItem.qtd
-                            }, 0)
-                  
-                          }
-                      </ListItem>
-                  </Stack>
+                  <ListItem
+                    sx={{
+                      fontWeight: 700,
+                      fontSize: "1.25rem",
+                    }}
+                  >
+                    ${" "}
+                    {productCart.reduce(
+                      (total: number, cartItem: IProductCart) => {
+                        const item = data.storeProducts.find(
+                          (p) => p.id === cartItem.id
+                        );
+                        return total + (item?.price || 0) * cartItem.qtd;
+                      },
+                      0
+                    )}
+                  </ListItem>
+                </Stack>
               </Menu>
-              
-            </Box>                  
-          }
-
+            </Box>
+          )}
         </Toolbar>
       </AppBar>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
+      <Drawer
+        container={container}
+        variant="temporary"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{
+          keepMounted: true, // Better open performance on mobile.
+        }}
+        sx={{
+          display: { xs: "block", sm: "none" },
+          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+        }}
+      >
+        {drawer}
+      </Drawer>
     </Stack>
   );
 }
-export default Navbar
+export default Navbar;
