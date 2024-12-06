@@ -1,9 +1,30 @@
 {
+    "title": "My Landing Page",
+    "menu": [
+        {
+            "title": "Features",
+            "href": "#features"
+        },
+        {
+            "title": "About",
+            "href": "#about"
+        },
+        {
+            "title": "Services",
+            "href": "#services"
+        },
+        {
+            "title": "Gallery",
+            "href": "#portfolio"
+        },
+        {
+            "title": "Testimonials",
+            "href": "#testimonials"
+        }
+    ],
     "Header": {
-
         "title": "We are a Landing Page",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-
     },
     "About": {
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -20,7 +41,8 @@
             "Lorem ipsum dolor"
         ]
     },
-    "Services": [{
+    "Services": [
+        {
             "icon": "fa fa-wordpress",
             "name": "Lorem ipsum dolor",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
@@ -50,10 +72,9 @@
             "name": "Consectetur adipiscing",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         }
-
-
     ],
-    "Testimonials": [{
+    "Testimonials": [
+        {
             "img": "img/testimonials/01.jpg",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "John Doe"
@@ -84,7 +105,8 @@
             "name": "Johnathan Doe"
         }
     ],
-    "Team": [{
+    "Team": [
+        {
             "img": "img/team/01.jpg",
             "name": "John Doe",
             "job": "Director"
@@ -93,7 +115,8 @@
             "img": "img/team/02.jpg",
             "name": "Mike Doe",
             "job": "Senior Designer"
-        }, {
+        },
+        {
             "img": "img/team/03.jpg",
             "name": "Jane Doe",
             "job": "Senior Designer"
@@ -112,7 +135,8 @@
         "twitter": "twitter.com",
         "youtube": "youtube.com"
     },
-    "Features": [{
+    "Features": [
+        {
             "icon": "fa fa-comments-o",
             "title": "Lorem ipsum",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
@@ -132,5 +156,45 @@
             "title": "Lorem ipsum",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         }
-    ]
+    ],
+    "galleries": [
+        {
+            "thumb": "img/portfolio/01-small.jpg",
+            "title": "Lorem Ipsum1"
+        },
+        {
+            "thumb": "img/portfolio/02-small.jpg",
+            "title": "Lorem Ipsum2"
+        },
+        {
+            "thumb": "img/portfolio/03-small.jpg",
+            "title": "Lorem Ipsum3"
+        },
+        {
+            "thumb": "img/portfolio/04-small.jpg",
+            "title": "Lorem Ipsum4"
+        },
+        {
+            "thumb": "img/portfolio/05-small.jpg",
+            "title": "Lorem Ipsum5"
+        },
+        {
+            "thumb": "img/portfolio/06-small.jpg",
+            "title": "Lorem Ipsum6"
+        },
+        {
+            "thumb": "img/portfolio/07-small.jpg",
+            "title": "Lorem Ipsum7"
+        },
+        {
+            "thumb": "img/portfolio/08-small.jpg",
+            "title": "Lorem Ipsum8"
+        },
+        {
+            "thumb": "img/portfolio/09-small.jpg",
+            "title": "Lorem Ipsum9"
+        }
+    ],
+    "gallerySubTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.",
+    "copyRight": "© Copyright 2024 Nextjs Starter. Made with CreativeDesignsGuru."
 }
