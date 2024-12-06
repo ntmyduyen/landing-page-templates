@@ -7,18 +7,16 @@ import {
   List,
   IconButton,
   ListItem,
-  ListItemIcon,
   ListItemText,
 } from '@mui/material'
 // rotas
 import { Link } from 'react-router-dom';
 // icons
-import EmailIcon from '@mui/icons-material/Email';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
+import data from '../content.json';
 
 const drawerWidth = 240;
 
@@ -29,25 +27,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-start',
 }));
-
-//rotas
-const itemList = [
-  {
-    text: "Home",
-    icon: <HomeIcon />,
-    to: "/"
-  },
-  {
-    text: "About",
-    icon: <InfoIcon />,
-    to: "/about"
-  },
-  {
-    text: "Contact",
-    icon: <EmailIcon />,
-    to: "/contact"
-  }
-];
 
 
 const DrawerItem = () => {
@@ -93,7 +72,7 @@ const DrawerItem = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {itemList.map( ( item ) => {
+          {data.menus.map( ( item ) => {
             const { text } = item;
             return(
               <ListItem 
@@ -108,16 +87,6 @@ const DrawerItem = () => {
                 }
               }}
               >
-                <ListItemIcon
-                sx={{
-                  "&:hover":{
-                    backgroundColor: 'transparent',
-                    color: '#1c2859',
-                  }
-                }}
-                >
-                  {item.icon}
-                </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             )

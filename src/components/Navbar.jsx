@@ -15,6 +15,8 @@ import DrawerItem from './DrawerItem';
 // rotas
 import { Link } from 'react-router-dom';
 
+import data from "../content.json"
+
 
 // personalizacao
 const StyledToolbar = styled(Toolbar) ({
@@ -28,22 +30,6 @@ const ListMenu = styled(List)(({ theme }) => ({
         display: "flex",
     },
 }));
-
-//rotas
-const itemList = [
-    {
-      text: "Home",
-      to: "/" 
-    },
-    {
-      text: "About",
-      to: "/about"
-    },
-    {
-        text: "Contact",
-        to: "/contact"
-    }
-];
 
 
 const Navbar = () => {
@@ -63,13 +49,13 @@ const Navbar = () => {
                 component="h2"
 
                 >
-                    HBSales
+                    {data.title}
                 </Typography>
                 <Box sx={{display: { xs: 'block', sm: 'none' } }}>
                     <DrawerItem /> 
                 </Box>
                 <ListMenu>
-                    {itemList.map( ( item ) => {
+                    {data.menus.map( ( item ) => {
                         const { text } = item;
                         return(
                             <ListItem key={text}>

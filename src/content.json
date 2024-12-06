@@ -1,0 +1,102 @@
+{
+    "title": "HBSales",
+    "menus": [
+        {
+            "text": "Home",
+            "to": "/"
+        },
+        {
+            "text": "About",
+            "to": "/about"
+        },
+        {
+            "text": "Contact",
+            "to": "/contact"
+        }
+    ],
+    "homeHeaderTitle": "We'll build house of your dream",
+    "homeHeaderDescription": "We have 9000 more review and our customers trust on out property and quality products.",
+    "homeHeaderButtonPrimayTitle": "Buy now",
+    "homeHeaderButtonSecondaryTitle": "explore",
+    "homeHeaderButtonSecoddaryHref": "/about",
+    "homeHeaderBackground": "/images/pexels-binyamin-mellish-186078.png",
+    "homeGetStartedTitle1": "We make it easy for tenants and landlords",
+    "homeGetStartedDescription1": "Listing are updated continuously so you won't miss out on homes that just hit market until you find your perfect home.",
+    "homeGetStartedImage1": "/images/pexels-alex-staudinger-1732414.jpg",
+    "homeGetStartedTitle2": "Match with the best agent",
+    "homeGetStartedDescription2": "Our verified partner Agents are local experts who earn an average of 4.8/5 stars from buyers and sellers.",
+    "homeGetStartedImage2": "/images/pexels-pixabay-271816.jpg",
+    "homeGetInTouchTitle": "Contact us to buy property",
+    "homeGetInTouchDescription": "It is our commitment to ensure a professional and enjoyable new home buying experience for you. If you want to get a home to start living as a family in an area that you love click the button below.",
+    "homeGetInTouchButtonLabel": "get in touch",
+    "homeGetInTouchButtonHref": "/contact",
+    "aboutContentTitle": "Property facilities",
+    "aboutContentDescription": "We have more 5000 reviews and our customers trust on out quality product and trust own our product.",
+    "aboutContents": [
+        "gym",
+        "parking",
+        "local dining",
+        "swimming pool",
+        "Internet"
+    ],
+    "aboutGalleryImages": [
+        {
+            "alt": "image1",
+            "url": "https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?cs=srgb&dl=pexels-pixabay-259751.jpg&fm=jpg"
+        },
+        {
+            "alt": "image2",
+            "url": "https://images.pexels.com/photos/5411784/pexels-photo-5411784.jpeg?cs=srgb&dl=pexels-andrea-davis-5411784.jpg&fm=jpg"
+        },
+        {
+            "alt": "image3",
+            "url": "https://images.pexels.com/photos/356809/pexels-photo-356809.jpeg?cs=srgb&dl=pexels-daniel-frank-356809.jpg&fm=jpg"
+        },
+        {
+            "alt": "image4",
+            "url": "https://images.pexels.com/photos/6267516/pexels-photo-6267516.jpeg?cs=srgb&dl=pexels-get-lost-mike-6267516.jpg&fm=jpg"
+        },
+        {
+            "alt": "image5",
+            "url": "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?cs=srgb&dl=pexels-huseyn-kamaladdin-667838.jpg&fm=jpg"
+        }
+    ],
+    "aboutGalleryTitle": "Rooms Gallery",
+    "aboutGalleryDescription": "We have more 5000 reviews and our customers trust on our quality product and trust own our product. If you interested, contact us.",
+    "contactDetailTitle": "Interesting to buy property",
+    "contactDetailDescription": "If you are interested to buy the property contact us we will call you. Shortly to fulfill you requirements and property.",
+    "contactDetailButton": "send",
+    "footer": [
+        {
+            "title": "Address",
+            "contents": [
+                "15th Louis St, london 92382, eng",
+                "25 999-345-10800",
+                "info@housesales.com"
+            ]
+        },
+        {
+            "title": "our services",
+            "contents": [
+                "buy house",
+                "sell house",
+                "rent house",
+                "build house"
+            ]
+        },
+        {
+            "title": "our company",
+            "contents": [
+                "reporting",
+                "get in touch",
+                "management"
+            ]
+        }
+    ],
+    "address": "15th Louis St, london 92382, eng",
+    "phoneNumber": "25 999-345-10800",
+    "email": "info@housesales.com",
+    "instagram": "#",
+    "facebook": "#",
+    "copyRight": "© 2022 HBSales Inc."
+}

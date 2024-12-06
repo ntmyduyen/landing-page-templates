@@ -9,7 +9,6 @@ import {
 // icons
 import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics';
 import LocalParkingIcon from '@mui/icons-material/LocalParking';
-import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
 import FastfoodOutlinedIcon from '@mui/icons-material/FastfoodOutlined';
 import PoolOutlinedIcon from '@mui/icons-material/PoolOutlined';
 import WifiPasswordIcon from '@mui/icons-material/WifiPassword';
@@ -17,8 +16,15 @@ import WifiPasswordIcon from '@mui/icons-material/WifiPassword';
 import Title from './Title'
 import Paragraph from './Paragraph'
 
+import data from '../content.json'
+
+const ICONS = [SportsGymnasticsIcon, LocalParkingIcon, FastfoodOutlinedIcon, PoolOutlinedIcon, WifiPasswordIcon]
 
 const Content = () => {
+    const contents = data.aboutContents.map((item, index) => ({
+        content: item,
+        icon: ICONS[index]
+    })) 
   return (    
         <Grid container spacing={0}   
         sx={{
@@ -48,54 +54,20 @@ const Content = () => {
                     paddingTop: 1,
                 }}
                 >
-                    Property facilities
+                    {data.aboutContentTitle}
                 </Typography>
 
                 <Paragraph 
                 text={
-                    ' We have more 5000 reviews\
-                    and our customers trust on out quality\
-                    product and trust own our product.'
+                    data.aboutContentDescription
                 }
                 maxWidth = {'75%'}
                 mx={0}
                 textAlign={'start'}
                 />
             </Grid>
-            
-            <Grid item xs={12} sm={6} md={3}>
-                <Card 
-                square={ true }
-                sx={{
-                    minHeight: 200,
-                    display: 'flex',
-                    flexDirection:'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    border: '1px solid #ccc',
-                }}>
-                    <CardContent>
-                        <IconButton>
-                            <SportsGymnasticsIcon 
-                            fontSize="large"
-                            color="secondary" />
-                        </IconButton>
-                        <Typography 
-                        variant="h5" 
-                        component="p"
-                        sx={{
-                            fontWeight: 700,
-                            textTransform: 'capitalize',
-                        }}
-                        >
-                        gym
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </Grid>
 
-            <Grid item xs={12} sm={6} md={3}>
+            {contents.map((content, index) => <Grid key={index} item xs={12} sm={6} md={3}>
                 <Card 
                 square={ true }
                 sx={{ 
@@ -109,7 +81,7 @@ const Content = () => {
                 }}>
                     <CardContent>
                         <IconButton>
-                            <LocalParkingIcon 
+                            <content.icon 
                             fontSize="large"
                             color="secondary" />
                         </IconButton>
@@ -121,132 +93,11 @@ const Content = () => {
                             textTransform: 'capitalize',
                         }}
                         >
-                        parking
+                        {content.content}
                         </Typography>
                     </CardContent>
                 </Card>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={2}
-            sx={{
-                display: {xs: 'none', sm: 'block'},
-            }}  
-            >
-                <Card 
-                square={ true }
-                sx={{ 
-                    boxShadow: 'none',
-                    minHeight: 180,
-                    display: 'flex',
-                    flexDirection:'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                }}>
-                    <CardContent>
-                        <ArrowCircleRightRoundedIcon
-                        fontSize="large"
-                        color="secondary" />
-                    </CardContent>
-                </Card>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={3}>    
-                <Card 
-                square={ true }
-                sx={{ 
-                    minHeight: 200,
-                    display: 'flex',
-                    flexDirection:'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center', 
-                    border: '1px solid #ccc'
-                }}>
-                    <CardContent>
-                        <IconButton>
-                            <FastfoodOutlinedIcon
-                            fontSize="large"
-                            color="secondary" />
-                        </IconButton>
-                        <Typography 
-                        variant="h5" 
-                        component="p"
-                        sx={{
-                            fontWeight: 700,
-                            textTransform: 'capitalize',
-                        }}
-                        >
-                        local dining
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={3}>
-                <Card 
-                square={ true }
-                sx={{ 
-                    minHeight: 200,
-                    display: 'flex',
-                    flexDirection:'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center',                    
-                    border: '1px solid #ccc',
-                }}
-                >
-                    <CardContent>
-                        <IconButton>
-                            <PoolOutlinedIcon 
-                            fontSize="large"
-                            color="secondary" />
-                        </IconButton>
-                        <Typography 
-                        variant="h5" 
-                        component="p"
-                        sx={{
-                            fontWeight: 700,
-                            textTransform: 'capitalize',
-                        }}
-                        >
-                        swimming pool
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={3}>
-                <Card 
-                square={ true }
-                sx={{ 
-                    minHeight: 200,
-                    display: 'flex',
-                    flexDirection:'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center', 
-                    border: '1px solid #ccc',
-                }}>
-                    <CardContent>
-                        <IconButton>
-                            <WifiPasswordIcon
-                            fontSize="large"
-                            color="secondary" />
-                        </IconButton>
-                        <Typography 
-                        variant="h5" 
-                        component="p"
-                        sx={{
-                            fontWeight: 700,
-                            textTransform: 'capitalize',
-                        }}
-                        >
-                        Internet
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </Grid> 
+            </Grid>)}
         </Grid>
     );
 }

@@ -8,6 +8,8 @@ import {
 import Title from './Title'
 import Paragraph from './Paragraph'
 
+import data from '../content.json'
+
 const Details = () => {
 
     const handleSubmit = (event) => {
@@ -33,14 +35,13 @@ const Details = () => {
         >
             <Title 
             text={
-                'Interesting to buy property'
+                data.contactDetailTitle
                 } 
             textAlign={'center'}
             />
             <Paragraph 
             text={
-                'If you are interested to buy the property contact us we will call you. \
-                Shortly to fulfill you requirements and property.'
+                data.contactDetailDescription
             }
             maxWidth = {'sm'}
             mx={0}
@@ -93,7 +94,7 @@ const Details = () => {
                     }
                 }}
                 >
-                    send
+                    {data.contactDetailButton}
                 </Button>
             </Box>
         </Stack>

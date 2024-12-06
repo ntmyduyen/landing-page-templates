@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from 'react-router-dom'
-//img
-import headerImg from '../assets/pexels-binyamin-mellish-186078.png'
+
+import data from "../content.json"
 
 const Header = () => {
 
@@ -48,7 +48,7 @@ const Header = () => {
                     color: '#fff',
                 }}
                 >
-                    We'll build house of your dream
+                    {data.homeHeaderTitle}
                 </Typography>
 
                 <Typography
@@ -60,8 +60,7 @@ const Header = () => {
                     color: '#fff',
                 }}
                 >
-                    We have 9000 more review and our customers
-                    trust on out property and quality products.
+                    {data.homeHeaderDescription}
                 </Typography>
 
                 <Box>
@@ -85,11 +84,11 @@ const Header = () => {
                         }
                     }}
                     >
-                        buy now
+                        {data.homeHeaderButtonPrimayTitle}
                     </Button>
                     <Button 
                     component={Link} 
-                    to={'/about'}
+                    to={data.homeHeaderButtonSecoddaryHref}
                     variant='outlined'
                     sx={{
                         px: 4, 
@@ -110,7 +109,7 @@ const Header = () => {
                         }
                     }}
                     >
-                        explore
+                        {data.homeHeaderButtonSecondaryTitle}
                     </Button>
                 </Box>
             </BoxText>
@@ -128,7 +127,7 @@ const Header = () => {
             })}
             >
                 <img
-                src={headerImg}
+                src={data.homeHeaderBackground}
                 alt="headerImg"
                 style={{ 
                     width: "100%", 

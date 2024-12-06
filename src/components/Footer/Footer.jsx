@@ -11,6 +11,8 @@ import FooterLink from './FooterLink'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
+import data from '../../content.json'
+
 const Footer = () => {
 
   const StackColumn = styled(Stack) (() => ({
@@ -42,42 +44,22 @@ const Footer = () => {
       px: 2,
     }}
     >
-      <StackColumn>
-        <FooterTitle text={'address'} />
-        <FooterLink 
-        text={'15th Louis St, london 92382, eng'} 
-        />
-        <FooterLink 
-        text={'25 999-345-10800'} 
-        />
-        <FooterLink 
-        text={'info@housesales.com'} 
-        />
-      </StackColumn>
-      
-      <StackColumn>
-        <FooterTitle text={'our services'} />
-        <FooterLink text={'buy house'} />
-        <FooterLink text={'sell house'} />
-        <FooterLink text={'rent house'} />
-        <FooterLink text={'build house'} />
-      </StackColumn>
-      <StackColumn>
-        <FooterTitle text={'our company'} />
-        <FooterLink text={'reporting'} />
-        <FooterLink text={'get in touch'} />
-        <FooterLink text={'management'} />
-      </StackColumn>
+      {data.footer.map((item, index) => <StackColumn key={index}>
+        <FooterTitle text={item.title} />
+        {item.contents.map((content, idx) => <FooterLink key={idx}
+        text={content} 
+        />)}
+      </StackColumn>)}
 
       <StackColumn>
-        <FooterTitle text={'hBSales'} />
+        <FooterTitle text={data.title} />
         <Stack 
         direction='row' 
         width= '70px'
         maxWidth='100%'
         justifyContent='space-between'
         >
-          <Link href="#" variant="body2" 
+          <Link href={data.instagram} variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {
@@ -87,7 +69,7 @@ const Footer = () => {
           >
             <InstagramIcon />  
           </Link> 
-          <Link href="#"variant="body2" 
+          <Link href={data.facebook} variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {
@@ -102,7 +84,7 @@ const Footer = () => {
         variant='caption'
         component='p' 
         >
-          &copy; 2022 HBSales Inc.
+          {data.copyRight}
         </Typography>
       </StackColumn>
     </BoxRow>

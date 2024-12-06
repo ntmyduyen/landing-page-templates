@@ -12,35 +12,14 @@ import { Carousel } from "react-responsive-carousel";
 import Title from './Title'
 import Paragraph from './Paragraph'
 
+import data from '../content.json'
+
 
 const Gallery = () => {
     
     const [currentIndex, setCurrentIndex] = useState();
 
-    const imageData = [
-        {
-            alt: 'image1',
-            url: 'https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?cs=srgb&dl=pexels-pixabay-259751.jpg&fm=jpg'
-        },
-        {
-            alt: 'image2',
-            url: 'https://images.pexels.com/photos/5411784/pexels-photo-5411784.jpeg?cs=srgb&dl=pexels-andrea-davis-5411784.jpg&fm=jpg'
-        },
-        {
-            alt: "image3",
-            url: 'https://images.pexels.com/photos/356809/pexels-photo-356809.jpeg?cs=srgb&dl=pexels-daniel-frank-356809.jpg&fm=jpg'
-        },
-        {
-            alt: "image4",
-            url: 'https://images.pexels.com/photos/6267516/pexels-photo-6267516.jpeg?cs=srgb&dl=pexels-get-lost-mike-6267516.jpg&fm=jpg'
-        },
-        {
-            alt: "image5",
-            url: 'https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?cs=srgb&dl=pexels-huseyn-kamaladdin-667838.jpg&fm=jpg'
-        },
-    ];
-  
-    const renderSlides = imageData.map((image) => (
+    const renderSlides = data.aboutGalleryImages.map((image) => (
     <div key={image.alt}>
         <img src={image.url} alt={image.alt} />
     </div>
@@ -82,13 +61,10 @@ const Gallery = () => {
                     paddingTop: 1,
                 }}
                 >
-                    Rooms Gallery
+                    {data.aboutGalleryTitle}
                 </Typography>
                 <Paragraph text={
-                    'We have more 5000 reviews and our\
-                    customers trust on our quality product\
-                    and trust own our product. If you interested,\
-                    contact us.'
+                    data.aboutGalleryDescription
                 } 
                 maxWidth = {'sm'}
                 mx={'auto'}
@@ -108,7 +84,7 @@ const Gallery = () => {
                 showArrows={false}
                 autoPlay={false}
                 infiniteLoop={true}
-                selectedItem={imageData[currentIndex]}
+                selectedItem={data.aboutGalleryImages[currentIndex]}
                 onChange={handleChange}
                 className="carousel-container"
                 >

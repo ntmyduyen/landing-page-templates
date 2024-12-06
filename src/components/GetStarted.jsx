@@ -6,9 +6,8 @@ import {
     Typography,
 } from '@mui/material'
 import Title from './Title'
-// img
-import imgDetail from '../assets/pexels-alex-staudinger-1732414.jpg';
-import imgDetail2 from '../assets/pexels-pixabay-271816.jpg';
+
+import data from '../content.json'
 
 
 const GetStarted = () => {
@@ -47,21 +46,19 @@ const GetStarted = () => {
                 >
                     <Title
                     text={
-                        'We make it easy for tenants and landlords'
+                        data.homeGetStartedTitle1
                     }
                     textAlign={'start'}
                     />
                     <CustomTypography>
-                        Listing are updated continuously so you<br />
-                        won't miss out on homes that just hit<br />
-                        market until you find your perfect home.
+                        {data.homeGetStartedDescription1}
                     </CustomTypography> 
                 </Box>
 
             </CustomGridItem>
             
             <Grid item xs={12} sm={4} md={6}>
-                <img src={imgDetail} alt="" 
+                <img src={data.homeGetStartedImage1} alt="" 
                 style={{
                     width: '100%',
                 }}
@@ -73,7 +70,7 @@ const GetStarted = () => {
                 order: {xs: 4, sm: 4, md: 3}
             }}
             >
-                <img src={imgDetail2} alt="" 
+                <img src={data.homeGetStartedImage2} alt="" 
                 style={{ 
                     width: "100%",
                 }}
@@ -92,14 +89,13 @@ const GetStarted = () => {
                 >
                     <Title
                     text={
-                        'Match with the best agent'
+                        data.homeGetStartedTitle2
                         
                     }
                     textAlign={'start'}
                     />
                     <CustomTypography>
-                        Our verified partner Agents are local experts who<br /> 
-                        earn an average of 4.8/5 stars from buyers and sellers.
+                        {data.homeGetStartedDescription2}
                     </CustomTypography>
                 </Box>
             </CustomGridItem>
