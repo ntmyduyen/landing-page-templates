@@ -1,3 +1,4 @@
+import data from 'content.json';
 import Link from 'next/link';
 
 import { Button } from '../button/Button';
@@ -7,11 +8,11 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title={data.bannerTitle}
+      subtitle={data.bannerSubTitle}
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <Button>Get Started</Button>
+        <Link href={data.bannerButtonHref}>
+          <Button>{data.bannerButtonLabel}</Button>
         </Link>
       }
     />

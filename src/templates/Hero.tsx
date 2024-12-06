@@ -1,3 +1,4 @@
+import data from 'content.json';
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
@@ -11,29 +12,21 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
+        {data.menu.map((item, index) => (
+          <li key={index}>
+            <Link href={item.href}>{item.title}</Link>
+          </li>
+        ))}
       </NavbarTwoColumns>
     </Section>
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
-        title={
-          <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
-          </>
-        }
-        description="The easiest way to build a React landing page in seconds."
+        title={data.heroTitle}
+        description={data.heroDescription}
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href={data.heroButtonHref}>
+            <Button xl>{data.heroButtonLabel}</Button>
           </Link>
         }
       />

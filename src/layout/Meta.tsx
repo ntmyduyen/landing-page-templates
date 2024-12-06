@@ -1,8 +1,7 @@
+import data from 'content.json';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-
-import { AppConfig } from '../utils/AppConfig';
 
 type IMetaProps = {
   title: string;
@@ -55,8 +54,8 @@ const Meta = (props: IMetaProps) => {
           title: props.title,
           description: props.description,
           url: props.canonical,
-          locale: AppConfig.locale,
-          site_name: AppConfig.site_name,
+          locale: 'en',
+          site_name: data.siteName,
         }}
       />
     </>
