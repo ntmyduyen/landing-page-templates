@@ -1,0 +1,79 @@
+{
+    "appLogo": "/images/amplichat.png",
+    "appName": "AmpliChat",
+    "coverTitle": "Stay Connected at Events",
+    "coverText": "Chat with other attendees and make new friends at your favorite events and concerts.",
+    "appleStoreBadge": "/images/apple_store_badge.svg",
+    "appleStoreLink": "https://apps.apple.com/us/app/amplichat/id1499570373",
+    "googlePlayBadge": "/images/google_play_badge.png",
+    "googlePlayLink": "https://apps.apple.com/us/app/amplichat/id1499570373",
+    "coverImage": "/images/amplichat_iphones_two.png",
+    "endorsementTitle": "Hangout with your favorite people on your favorite apps",
+    "endorsementText": "AmpliChat powers conversations within DreamHub, VoiceQnA, VoiceMirror, BaZiPaiPai, and SpindriftHome.",
+    "endorsementList": [
+        {
+            "title": "DreamHub: Visualized Stories",
+            "titleColor": "orangeRed",
+            "image": "/images/dreamhub_filled.png",
+            "URL": "https://dreamhub.app"
+        },
+        {
+            "title": "VoiceQnA: Speak a New Language",
+            "titleColor": "forestGreen",
+            "image": "/images/voiceqna_fill_v2_gradient.png",
+            "URL": "https://voiceqna.com"
+        },
+        {
+            "title": "VoiceMirror: Travel Translator",
+            "titleColor": "blue",
+            "image": "/images/voice_mirror_v_1024.png",
+            "URL": "https://voiceqna.com/mirror"
+        },
+        {
+            "title": "BaZiPaiPai: Know Your Destiny",
+            "titleColor": "black",
+            "image": "/images/bazipaipai_64.png",
+            "URL": "https://bazipaipai.com"
+        },
+        {
+            "title": "SpindriftHome: HOA Management",
+            "titleColor": "orangeRed",
+            "image": "/images/sh_unfill_1024.png",
+            "URL": "https://spindrifthome.com"
+        }
+    ],
+    "sectionList": [
+        {
+            "title": "Event Networking Made Easy",
+            "text": "Tired of shouting over the music to talk to your friends at concerts and events? Our app makes it easy to chat with others in real-time, so you can enjoy the experience without missing out on socializing.",
+            "image": "/images/guitar.jpg"
+        },
+        {
+            "title": "Expand Your Event Community",
+            "text": "Meet like-minded people and share your excitement for the latest events and concerts.",
+            "image": "/images/event_phones.jpeg"
+        },
+        {
+            "title": "Enhance Event Experience",
+            "text": "Get instant access to a community of passionate event and concert-goers with our app! Chat with others before, during, and after the event to enhance your experience and create memories that last a lifetime.",
+            "image": "/images/foggy_blue.jpg"
+        },
+        {
+            "title": "Chat with Attendees",
+            "text": "Don't let social anxiety get in the way of enjoying your favorite events and concerts! With our app, you can chat with others and make new friends in a safe, welcoming environment.",
+            "image": "/images/purple_phones.png"
+        },
+        {
+            "title": "Discover New Events and Friends",
+            "text": "Our app is the perfect way to enhance your experience at events and concerts! Connect with others, share your thoughts and opinions, and discover new artists and events to love.",
+            "image": "/images/purple_light.jpg"
+        },
+        {
+            "title": "Connect with Concert Fans",
+            "text": "Whether you're a seasoned concert-goer or a first-time attendee, our app is the perfect way to connect with others and make the most of your experience. Download now and start chatting!",
+            "image": "/images/concert_classic.jpg"
+        }
+    ],
+    "discordImage": "/images/discord.png",
+    "discordLink": "https://discord.com/invite/aFQPYyAVDq"
+}
