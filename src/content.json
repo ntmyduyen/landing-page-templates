@@ -1,0 +1,373 @@
+{
+    "menu": [
+        {
+            "href": "#features",
+            "label": "Features"
+        },
+        {
+            "href": "#testimonials",
+            "label": "Testimonials"
+        },
+        {
+            "href": "#pricing",
+            "label": "Pricing"
+        },
+        {
+            "href": "#faq",
+            "label": "FAQ"
+        }
+    ],
+    "title": "ShadcnUI/React",
+    "logo": "/public/images/icon.png",
+    "github": "https://github.com/leoMirandaa/shadcn-landing-page.git",
+    "heroTitle": "Shadcn landing page for React developers",
+    "heroDescription": "Build your React landing page effortlessly with the required sections to your project.",
+    "sponsorTitle": "Investors and founders",
+    "sponsors": [
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 1"
+        },
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 2"
+        },
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 3"
+        },
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 4"
+        },
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 5"
+        },
+        {
+            "icon": "https://images-platform.99static.com//U0BKLXZyKBujIj4yPOuZ5s64hiQ=/652x722:1392x1462/fit-in/500x500/99designs-contests-attachments/123/123084/attachment_123084195",
+            "name": "Sponsor 6"
+        }
+    ],
+    "aboutImage": "/public/images/pilot.png",
+    "aboutContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "aboutStats": [
+        {
+            "quantity": "2.7K+",
+            "description": "Users"
+        },
+        {
+            "quantity": "1.8K+",
+            "description": "Subscribers"
+        },
+        {
+            "quantity": "112",
+            "description": "Downloads"
+        },
+        {
+            "quantity": "4",
+            "description": "Products"
+        }
+    ],
+    "howItWorkFeatures": [
+        {
+            "icon": "/public/images/medal.svg",
+            "title": "Accessibility",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum"
+        },
+        {
+            "icon": "/public/images/map.svg",
+            "title": "Community",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum"
+        },
+        {
+            "icon": "/public/images/plane.svg",
+            "title": "Scalability",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum"
+        },
+        {
+            "icon": "/public/images/gift.svg",
+            "title": "Gamification",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum"
+        }
+    ],
+    "howItWorkTitle": "How It Works Step-by-Step Guide",
+    "howItWorkDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolor pariatur sit",
+    "featuresTitle": "Many Great Features",
+    "features": [
+        {
+            "title": "Responsive Design",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "image": "/public/images/growth.png"
+        },
+        {
+            "title": "Intuitive user interface",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "image": "/public/images/reflecting.png"
+        },
+        {
+            "title": "AI-Powered insights",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "image": "/public/images/looking-ahead.png"
+        }
+    ],
+    "featureList": [
+        "Dark/Light theme",
+        "Reviews",
+        "Features",
+        "Pricing",
+        "Contact form",
+        "Our team",
+        "Responsive design",
+        "Newsletter",
+        "Minimalist"
+    ],
+    "serviceList": [
+        {
+            "title": "Code Collaboration",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "icon": "/public/images/chart.svg"
+        },
+        {
+            "title": "Project Management",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "icon": "/public/images/wallet.svg"
+        },
+        {
+            "title": "Task Automation",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+            "icon": "/public/images/magnifier.svg"
+        }
+    ],
+    "serviceTitle": "Client-Centric Services",
+    "serviceDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolor.",
+    "serviceImage": "/public/images/cube-leg.png",
+    "ctaTitle": "All Your Ideas & Concepts In One Interface",
+    "ctaDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae. Ipsa tempore ipsum iste quibusdam illum ducimus eos. Quasi, sed!",
+    "ctaButtons": [
+        {
+            "title": "Request a Demo",
+            "href": "#"
+        },
+        {
+            "title": "View all features",
+            "href": "#"
+        }
+    ],
+    "testimonials": [
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe",
+            "comment": "This landing page is awesome!"
+        },
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe1",
+            "comment": "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+        },
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe2",
+            "comment": "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+        },
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe3",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        },
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe4",
+            "comment": "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud."
+        },
+        {
+            "image": "https://github.com/shadcn.png",
+            "name": "John Doe React",
+            "userName": "@john_Doe5",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    "testimonialsTitle": "Discover Why People Love This Landing Page",
+    "testimonialsDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error facere hic reiciendis illo",
+    "teamList": [
+        {
+            "imageUrl": "https://i.pravatar.cc/150?img=35",
+            "name": "Emma Smith",
+            "position": "Product Manager",
+            "socialNetworks": [
+                {
+                    "name": "Linkedin",
+                    "url": "https://www.linkedin.com/in/leopoldo-miranda/"
+                },
+                {
+                    "name": "Facebook",
+                    "url": "https://www.facebook.com/"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/"
+                }
+            ]
+        },
+        {
+            "imageUrl": "https://i.pravatar.cc/150?img=60",
+            "name": "John Doe",
+            "position": "Tech Lead",
+            "socialNetworks": [
+                {
+                    "name": "Linkedin",
+                    "url": "https://www.linkedin.com/in/leopoldo-miranda/"
+                },
+                {
+                    "name": "Facebook",
+                    "url": "https://www.facebook.com/"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/"
+                }
+            ]
+        },
+        {
+            "imageUrl": "https://i.pravatar.cc/150?img=36",
+            "name": "Ashley Ross",
+            "position": "Frontend Developer",
+            "socialNetworks": [
+                {
+                    "name": "Linkedin",
+                    "url": "https://www.linkedin.com/in/leopoldo-miranda/"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/"
+                }
+            ]
+        },
+        {
+            "imageUrl": "https://i.pravatar.cc/150?img=17",
+            "name": "Bruce Rogers",
+            "position": "Backend Developer",
+            "socialNetworks": [
+                {
+                    "name": "Linkedin",
+                    "url": "https://www.linkedin.com/in/leopoldo-miranda/"
+                },
+                {
+                    "name": "Facebook",
+                    "url": "https://www.facebook.com/"
+                }
+            ]
+        }
+    ],
+    "teamTitle": "Our Dedicated Crew",
+    "teamDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolor pariatur sit!",
+    "pricingList": [
+        {
+            "title": "Free",
+            "popular": 0,
+            "price": 0,
+            "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+            "buttonText": "Get Started",
+            "benefitList": [
+                "1 Team member",
+                "2 GB Storage",
+                "Upto 4 pages",
+                "Community support",
+                "lorem ipsum dolor"
+            ]
+        },
+        {
+            "title": "Premium",
+            "popular": 1,
+            "price": 5,
+            "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+            "buttonText": "Start Free Trial",
+            "benefitList": [
+                "4 Team member",
+                "4 GB Storage",
+                "Upto 6 pages",
+                "Priority support",
+                "lorem ipsum dolor"
+            ]
+        },
+        {
+            "title": "Enterprise",
+            "popular": 0,
+            "price": 40,
+            "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+            "buttonText": "Contact US",
+            "benefitList": [
+                "10 Team member",
+                "8 GB Storage",
+                "Upto 10 pages",
+                "Priority support",
+                "lorem ipsum dolor"
+            ]
+        }
+    ],
+    "pricingTitle": "Get Unlimited Access",
+    "pricingDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis.",
+    "newsletterTitle": "Join Our Daily Newsletter",
+    "newsletterDescription": "Lorem ipsum dolor sit amet consectetur.",
+    "FAQList": [
+        {
+            "question": "Is this template free?",
+            "answer": "Yes. It is a free ChadcnUI template.",
+            "value": "item-1"
+        },
+        {
+            "question": "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+            "value": "item-2"
+        },
+        {
+            "question": "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+            "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+            "value": "item-3"
+        },
+        {
+            "question": "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+            "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            "value": "item-4"
+        },
+        {
+            "question": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+            "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+            "value": "item-5"
+        }
+    ],
+    "copyRight": "© 2024 Landing page made by Leo Miranda",
+    "footerFollowUs": [
+        {
+            "title": "Github",
+            "href": "#"
+        },
+        {
+            "title": "Twitter",
+            "href": "#"
+        },
+        {
+            "title": "Dribbble",
+            "href": "#"
+        }
+    ],
+    "footerCommunity": [
+        {
+            "title": "Youtube",
+            "href": "#"
+        },
+        {
+            "title": "Discord",
+            "href": "#"
+        },
+        {
+            "title": "Twitch",
+            "href": "#"
+        }
+    ]
+}
